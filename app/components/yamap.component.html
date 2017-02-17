@@ -1,0 +1,14 @@
+
+<h1>Yandex Map</h1>
+
+<form (submit)="setAddress(addressA.value, addressB.value, $event)">
+	<label for="addressA">Адрес пункта А</label>
+	<input type="text" id="addressA" name="addressA" #addressA value="Набережные Челны"/>
+	<code>[{{coordA}}]</code><br>
+	<label for="addressB">Адрес пунка Б</label>
+	<input type="text"	id="addressB" name="addressB" #addressB value="Казань"/>
+	<code>[{{coordB}}]</code><br>
+	<input type="submit" value="Посторить маршрут">
+</form>
+
+<div id='map'></div>
